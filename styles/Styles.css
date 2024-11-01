@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem; /* Reduce el espacio vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px; /* Tamaño reducido del logo */
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-left: 15px; /* Reduce el espacio entre los elementos */
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-bar a:hover {
+    color: #f4f4f4; /* Color más claro al pasar el mouse */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2; /* El texto está sobre la superposición */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo del texto semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.features-section {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.features-section ul {
+    list-style: none;
+}
+
+.features-section ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 5rem 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.forum-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.create-topic {
+    margin-bottom: 2rem;
+}
+
+.create-topic input, .create-topic textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-topic button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.topics-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topics-list li {
+    background-color: #f4f4f4;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    text-align: left;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #f4a261;
+}
+
+.downloads-section {
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.downloads-list {
+    margin-top: 20px;
+}
+
+.downloads-list h2 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.downloads-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.downloads-list li {
+    margin: 15px 0;
+}
+
+.downloads-list a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.downloads-list a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .downloads-section {
+        padding: 20px;
+    }
+
+    .downloads-list a {
+        width: 100%;
+    }
+}
