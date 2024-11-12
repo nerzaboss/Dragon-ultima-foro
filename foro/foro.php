@@ -33,7 +33,7 @@ $resultado = $conexion->query($sql);
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="foro.php">Foro</a></li>
-                <li><a href="perfil.php?id=<?php echo $_SESSION['usuario_id']; ?>">Mi Perfil</a></li> <!-- Enlace al perfil -->
+                <li><a href="perfil.php?id=<?php echo $_SESSION['usuario_id']; ?>">Mi Perfil</a></li> 
                 <li>Bienvenido, <?php echo $_SESSION['nombre_usuario']; ?></li>
                 <li><a href="logout.php">Cerrar sesión</a></li>
             </ul>
